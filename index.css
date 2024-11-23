@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 
 header,footer{
@@ -14,25 +13,24 @@ header,footer{
 
 header{
        display: grid; 
-       grid-template-columns: 50% 50%;
+       grid-template-columns: repeat(2,50%);
        
 }
 
-header > div{
-    height: 100px;
+header div{
+             height: 100px;
 }
 
-header div img
-{
-    width:250px;
-    height:90px;
-    margin-left: 200px;
-}
+header div img{
+                width: 250px;
+                height: 90px;
+                margin-left: 200px;
+                }
 
 .navegacion{
             display: flex;
             align-items: center;
-            justify-content:center;                                  
+            justify-content: center;                                  
 }
 
 .navegacion li{   
@@ -45,35 +43,35 @@ header div img
 }
 
 .navegacion li a{
-                text-decoration: none;
-                color: white;
+                    text-decoration: none;
+                    color: white;
 }
 
 .navegacion li a:hover{
-    background-color: white;
-     color: black;
+                        background-color: white;
+                        color: black;
 }
 
 
 .grid-container{
-                    display: grid;
-                    grid-template-columns: 200px 200px 200px 200px; 
-                    grid-template-rows: 300px 300px 300px; 
-                    column-gap: 5px;
-                    row-gap: 20px; 
-                    justify-content: center;  
-                    padding-top: 40px;
-                    padding-bottom: 10px;
+                display: grid;
+                grid-template-columns: repeat(4,200px); 
+                grid-template-rows: repeat(3,300px); 
+                justify-content: center; 
+                padding-top: 40px;
+                padding-bottom: 10px;
+                column-gap: 5px;
+                row-gap: 20px;  
+                }
+
+.grid-container div{            
+                    border: 5px solid black; 
+                    border-radius: 6px;            
 }
 
-.grid-container > div{            
-                        border: 5px solid black; 
-                        border-radius: 6px;            
-}
-
-.grid-container > div > img{
-    width: 190px;
-    height: 290px;
+.grid-container div img{
+                        width: 190px;
+                        height: 290px;
 }
  
 
